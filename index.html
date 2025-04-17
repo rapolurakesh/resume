@@ -1,121 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Firstname Lastname - Resume</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
-      color: #212529;
+      background-color: #ffffff;
+      font-family: 'Times New Roman', serif;
+      color: #000000;
+      padding: 2rem;
+    }
+    .resume {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .name {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .contact {
+      text-align: center;
+      font-size: 1rem;
+      margin-bottom: 2rem;
     }
     .section-title {
       font-weight: bold;
-      font-size: 1.3rem;
-      border-bottom: 2px solid #0d6efd;
-      margin-bottom: 1rem;
-      padding-bottom: 0.25rem;
-    }
-    .contact-info span {
-      display: inline-block;
-      margin-right: 15px;
+      font-size: 1.2rem;
+      text-decoration: underline;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
     }
     .work-entry {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    hr {
+      border-top: 1px solid #000;
     }
   </style>
 </head>
 <body>
-  <div class="container my-5">
-    <header class="mb-4 text-center">
-      <h1>Firstname Lastname</h1>
-      <p class="contact-info">
-        <span>📞 +91-9876543210</span>
-        <span>📧 abc.devops3@gmail.com</span>
-        <span>📍 Bangalore, India</span>
-      </p>
-    </header>
+  <div class="resume">
+    <div class="name">Firstname Lastname</div>
+    <div class="contact">
+      📞 +91-9876543210 &nbsp; | &nbsp; 📧 abc.devops3@gmail.com &nbsp; | &nbsp; 📍 Bangalore, India
+    </div>
 
-    <section>
-      <div class="section-title">Career Objective</div>
-      <p>To obtain a challenging and responsible position in the organization and to serve it with my honesty and by delivering my best performance.</p>
-    </section>
+    <div class="section-title">Career Objective</div>
+    <p>To obtain a challenging and responsible position in the organization and to serve it with my honesty and by delivering my best performance.</p>
 
-    <section>
-      <div class="section-title">Professional Summary</div>
+    <div class="section-title">Professional Summary</div>
+    <ul>
+      <li>7+ years of experience in Windows, Linux, and VMware vSphere Administration.</li>
+      <li>Knowledge on multiple IT Infrastructure services: Linux/Windows/AIX/VMware/NFS/Hyper-V/AD/DNS/O365.</li>
+      <li>Good knowledge on Ansible, Docker.</li>
+      <li>Supporting and exploring new technologies for customer requirements.</li>
+      <li>Worked at Startup Solution Pvt Ltd and Consultancy India Pvt Ltd.</li>
+      <li>Currently working at ABB as Systems Management and Security Specialist.</li>
+    </ul>
+
+    <div class="section-title">Education Qualification</div>
+    <ul>
+      <li>B.Tech (CSE), GRIET Engineering College, HYD - 2014</li>
+      <li>Intermediate (M.P.C), Intermediate Junior College, SRT - 2010</li>
+      <li>S.S.C, Govt High School, SRT - 2008</li>
+    </ul>
+
+    <div class="section-title">Training and Credentials</div>
+    <p><strong>Training:</strong></p>
+    <ul>
+      <li>Certified Hardware and Networking Engineer (Jetking, Hyderabad)</li>
+      <li>VMware VCP6-DCA</li>
+    </ul>
+    <p><strong>Credentials:</strong></p>
+    <ul>
+      <li>Microsoft Certified - Installing and Configuring Windows Server 2012 (70-410)</li>
+      <li>AIX - Interskill: AIX Systems Administrator, UNIX Fundamentals</li>
+    </ul>
+
+    <div class="section-title">Technical Skills</div>
+    <ul>
+      <li><strong>OS:</strong> Linux, Windows, AIX, VMware</li>
+      <li><strong>Virtualization:</strong> VMware 5.x/6.x, Hyper-V</li>
+      <li><strong>Tools:</strong> NFS, FTP, Nagios, Tivoli, IBM BigFix, Active Directory, DNS, DHCP, IIS, Office 365, WSUS, QRadar, 2FA Duo, SEP, EDR Sensor, Nessus, Ansible, GitHub</li>
+    </ul>
+
+    <div class="section-title">Work Experience</div>
+
+    <div class="work-entry">
+      <strong>ABC India Pvt Ltd, India</strong><br>
+      <em>Systems Management Specialist</em> (May 2021 – Present)
       <ul>
-        <li>7+ years of experience in Windows, Linux, and VMware vSphere Administration.</li>
-        <li>Knowledge in Linux/Windows/AIX/VMware, NFS, Hyper-V, Active Directory, DNS, Office 365, patching, Ansible, GitHub, Docker.</li>
-        <li>Currently working at ABB as Systems Management and Security Specialist.</li>
-        <li>Previously worked at Startup Solution Pvt Ltd and Consultancy India Pvt Ltd.</li>
+        <li>Leading a team of 5, distributing tasks and tracking progress.</li>
+        <li>Collaborating with CISO team on overrides.</li>
+        <li>Registering servers in ABB Inventory Tool based on classification.</li>
+        <li>Onboarding ABB systems and explaining processes to owners.</li>
+        <li>Reviewing security controls and initiating vulnerability scanning (Windows/Linux/AIX).</li>
+        <li>Remediating vulnerabilities: SMBv1, RC4, RDP/IIS/NetApp SSL, SSH, VNC, etc.</li>
+        <li>Monitoring with ITSS tool, proactively patching systems.</li>
+        <li>Registering servers in ABB FTP3 for repositories.</li>
+        <li>Installing and configuring EDR sensors, SEP, QRadar, WSUS client, Tivoli.</li>
+        <li>Performing OS upgrades and patching across platforms.</li>
+        <li>User validations (QEV & CBN), cron job scheduling for tools.</li>
+        <li>NFS admin: creating shares, configuring automount, and managing access.</li>
+        <li>Resolving issues with NFS, NTP, SSH, and FTP.</li>
+        <li>VM build/decommission, VMware tools and hardware updates.</li>
+        <li>System issue resolution (performance, storage, networking, security).</li>
+        <li>Participating in troubleshooting meetings during service outages.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <div class="section-title">Education</div>
+    <div class="work-entry">
+      <strong>Consultancy India Pvt Ltd (Micro)</strong><br>
+      <em>Systems Security Specialist</em> (Apr 2019 – Apr 2021)
       <ul>
-        <li>B.Tech (CSE), GRIET Engineering College, HYD - 2014</li>
-        <li>Intermediate (M.P.C), Intermediate Junior College, SRT - 2010</li>
-        <li>S.S.C, Govt High School, SRT - 2008</li>
+        <li>Registered ABB Servers in SSCA database.</li>
+        <li>Onboarded systems into CS team support and coordinated with owners.</li>
+        <li>Provided centralized support: patching, scanning, access mgmt, CrowdStrike Sensor.</li>
+        <li>Performed CBN and QEV user validation activities.</li>
+        <li>Handled change and incident tickets.</li>
+        <li>Managed disks and file systems using LVM on Linux.</li>
+        <li>Fixed Linux booting and file system issues.</li>
+        <li>Maintained 99.99% uptime on Linux servers.</li>
+        <li>Installed RAM, resolved permission issues.</li>
+        <li>Used Ansible for automated security updates and patch deployment.</li>
+        <li>Participated in 24/7 production support rotation.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <div class="section-title">Technical Skills</div>
+    <div class="work-entry">
+      <strong>Startup Solutions Pvt Ltd, India</strong><br>
+      <em>System Administrator</em> (Apr 2015 – Apr 2019)
       <ul>
-        <li><strong>OS:</strong> Linux, Windows, AIX, VMware</li>
-        <li><strong>Virtualization:</strong> VMware 5.x / 6.x, Hyper-V</li>
-        <li><strong>Tools:</strong> NFS, FTP, Nagios, Tivoli, IBM BigFix, AD, DNS, DHCP, IIS, Office 365, WSUS, QRadar, 2FA Duo, SEP, EDR Sensor, Nessus, Ansible, GitHub</li>
+        <li>Built/deployed VMs, managed virtual machines.</li>
+        <li>Installed/configured/troubleshot Windows OS on physical and virtual servers.</li>
+        <li>Performed snapshots, cloning, cold/hot migrations, and template creation.</li>
+        <li>Used VMotion & Storage VMotion for migrations.</li>
+        <li>Monitored VM/host performance (CPU, memory, disk).</li>
+        <li>Adjusted VM hardware resources.</li>
+        <li>Updated VMware tools and Windows servers via BigFix.</li>
+        <li>Resolved ESXi host and VM issues.</li>
+        <li>Installed/upgraded Windows Server 2003–2016.</li>
+        <li>Managed AD users, DNS updates, AD objects, FSMO roles, GPOs.</li>
+        <li>Deployed websites on IIS and managed customer hosting.</li>
+        <li>Renewed/configured domains (GoDaddy, Net4India).</li>
+        <li>Managed user share folders, backups via Acronis.</li>
+        <li>Handled mailbox tasks (create/delete/move) on Office365/webhost4life.</li>
+        <li>Troubleshooting calls for outages, antivirus install/update.</li>
+        <li>Installed/configured client OS: Windows 7/8.1/10.</li>
+        <li>Hardware issue coordination with lab support.</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
-      <div class="section-title">Work Experience</div>
+    <div class="section-title">Skills and Abilities</div>
+    <ul>
+      <li>Strong analytical and problem-solving skills</li>
+      <li>Independent and team-oriented work capability</li>
+      <li>Willing to learn new technologies</li>
+      <li>Results-oriented and service-focused</li>
+      <li>Quick at resolving customer issues professionally</li>
+    </ul>
 
-      <div class="work-entry">
-        <h5>ABC India Pvt Ltd, India — <em>Systems Management Specialist</em> (May 2021 – Present)</h5>
-        <ul>
-          <li>Team lead, responsible for distributing and tracking work.</li>
-          <li>Managed onboarding, security activities, vulnerability scanning and remediation.</li>
-          <li>Performed patching, OS upgrades, EDR/SEP/QRadar installations.</li>
-          <li>Worked on NFS administration, VM operations, SSH/NTP/FTP troubleshooting, etc.</li>
-        </ul>
-      </div>
-
-      <div class="work-entry">
-        <h5>Consultancy India Pvt Ltd — <em>Systems Security Specialist</em> (Apr 2019 – Apr 2021)</h5>
-        <ul>
-          <li>Registered servers, onboarded systems, validated users, handled tickets.</li>
-          <li>Linux server management, Ansible automation, patching, uptime management.</li>
-        </ul>
-      </div>
-
-      <div class="work-entry">
-        <h5>Startup Solutions Pvt Ltd — <em>System Administrator</em> (Apr 2015 – Apr 2019)</h5>
-        <ul>
-          <li>Built/deployed VMs, Windows OS management, VMware tasks.</li>
-          <li>DNS/AD management, GPO implementation, server/website admin, backups.</li>
-        </ul>
-      </div>
-    </section>
-
-    <section>
-      <div class="section-title">Skills and Abilities</div>
-      <ul>
-        <li>Analytical and problem-solving skills</li>
-        <li>Independent and team-based working</li>
-        <li>Willingness to learn new technologies</li>
-        <li>Customer service oriented</li>
-      </ul>
-    </section>
-
-    <section>
-      <div class="section-title">Declaration</div>
-      <p>I hereby declare that the above-mentioned details are true to the best of my knowledge.</p>
-      <p><em>Place: India</em></p>
-    </section>
+    <div class="section-title">Declaration</div>
+    <p>I hereby declare that the above-mentioned details are true to the best of my knowledge.</p>
+    <p><em>Place: India</em></p>
   </div>
 </body>
 </html>
